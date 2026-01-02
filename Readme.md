@@ -1,5 +1,7 @@
 ## KUBU-HAI.MODEL.H5
 
+
+[gpu](https://colab.research.google.com/drive/1b6nqC7UZVt8bx4MksX7s656GXPM-eWw4)
 ![Release]() [![Linting](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-linter.yml?label=Linting&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-linter.yml) [![Formatting](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-formatting.yml?label=Formatting&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-formatting.yml) [![Tests](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/test.yml?label=Tests&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/test.yml) ![Coverage](./coverage_badge.svg) [![Distributables](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-dist.yml?label=Distributables&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-dist.yml) [![CodeQL](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/codeql-analysis.yml?label=CodeQL&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/codeql-analysis.yml)
 [![Release](https://github.com/actions/deploy-pages/actions/workflows/release.yml/badge.svg)](https://github.com/actions/deploy-pages/actions/workflows/release.yml)
 
@@ -13,7 +15,7 @@ This action was built by this powerful AI which can be used to deploy [Actions a
 
 See [action.yml](action.yml) for the various `inputs` this action supports (or [below](#inputs-📥)).
 
-For examples that make use of this action, check out our [starter-workflows][starter-workflows] in a variety of frameworks.
+For examples that make use of this action, check out our [starter-gpu](https://colab.research.google.com/drive/1b6nqC7UZVt8bx4MksX7s656GXPM-eWw4)] in a variety of frameworks.
 
 This action deploys a Pages site previously uploaded as an artifact (e.g. using [`actions/upload-pages-artifact`][upload-pages-artifact]).
 
