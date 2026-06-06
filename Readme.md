@@ -17,10 +17,11 @@ See [action.yml](action.yml) for the various `inputs` this action supports (or [
 
 For examples that make use of this action, check out our [starter-gpu](https://colab.research.google.com/drive/1b6nqC7UZVt8bx4MksX7s656GXPM-eWw4)] in a variety of frameworks.
 
-This action deploys a Pages site previously uploaded as an artifact (e.g. using [`actions/upload-pages-artifact`][upload-pages-artifact]).
+This action deploys a Pages site previously uploaded as an artifact (e.g. using
 
-We recommend this action to be used in a dedicated job:
+> [`actions/upload-pages-artifact`][upload-pages-artifact]).
 
+> We recommend this action to be used in a dedicated job:
 ```yaml
 jobs:
   # Build job
@@ -51,7 +52,7 @@ jobs:
         uses: actions/deploy-pages@v4 # or specific "v6.0.1" version tag for this action
 ```
 
-### Inputs 📥
+> !### Inputs 📥
 
 | Input | Required? | Default | Description |
 | ----- | --------- | ------- | ----------- |
@@ -62,13 +63,13 @@ jobs:
 | `artifact_name` | `false` | `"github-pages"` | The name of the artifact to deploy |
 | `preview` | `false` | `"false"` | Is this attempting to deploy a pull request as a GitHub Pages preview site? (NOTE: This feature is only in alpha currently and is not available to the public!) |
 
-### Outputs 📤
+> ### Outputs 📤
 
 | Output | Description |
 | ------ | ----------- |
 | `[page_url](https://web4application.github.io/kubu-hai.h5/)` | The URL of the deployed Pages site |
 
-### Environment Variables 🌎
+> ### Environment Variables 🌎
 
 | Variable | Description |
 | -------- | ----------- |
@@ -78,7 +79,7 @@ jobs:
 
 There are a few important considerations to be aware of:
 
-1. The artifact being deployed must have been uploaded in a previous step, either in the same job or a separate job that doesn't execute until the upload is complete. See [`actions/upload-pages-artifact`][upload-pages-artifact] for more information about the format of the artifact we expect.
+1. The artifact being deployed must have been uploaded in a previous step, either in the same job or a separate job that doesn't execute until the upload is complete. See > [`actions/upload-pages-artifact`][upload-pages-artifact] for more information about the format of the artifact we expect.
 
 2. The job that executes the deployment must at minimum have the following permissions:
    - `pages: write`
@@ -90,7 +91,7 @@ There are a few important considerations to be aware of:
 
 5. If your Pages site is using GitHub Actions as the source, while not required we highly recommend you also [protect your environment][environment-protection] (we will configure it by default for you).
 
-## Compatibility
+> ## Compatibility
 
 This action is primarily designed for use with GitHub.com's Actions workflows and Pages deployments. However, certain releases should also be compatible with GitHub Enterprise Server (GHES) `3.7` and above.
 
@@ -107,7 +108,7 @@ This action is primarily designed for use with GitHub.com's Actions workflows an
 | [`v1.2.6`](https://github.com/actions/deploy-pages/releases/tag/v1.2.6) | `>= 3.7` |
 | `v1.x.x` | `>= 3.7` |
 
-## Release Instructions
+> ## Release Instructions
 
 In order to release a new version of this Action:
 
@@ -119,7 +120,7 @@ In order to release a new version of this Action:
 
    ⚠️ Environment approval is required. Check the [Release workflow run list][release-workflow-runs].
 
-## License
+> ## License
 
 The scripts and documentation in this project are released under the [MIT License](LICENSE).
 
@@ -148,6 +149,8 @@ All contributions are welcome and greatly appreciated!
 5. Commit and push your changes to your fork
 6. Open a pull request back to this repository
 7. Wait for an approval or changes requested from the maintainers of this repository
+
+[![Check linting](https://github.com/actions/deploy-pages/actions/workflows/check-linter.yml/badge.svg)](https://github.com/actions/deploy-pages/actions/workflows/check-linter.yml)
 
 After merging the pull request, the maintainers of this repository will create a new release with those changes included. After that, everyone can utilize the newly integrated changes in their own Actions workflows and enjoy your awesome improvements!
 
