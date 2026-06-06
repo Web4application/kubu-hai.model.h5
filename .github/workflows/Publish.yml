@@ -48,7 +48,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     permissions:
-      contents: build
+      contents: write
       pages: write
       id-token: write
 
@@ -65,4 +65,4 @@ jobs:
           path: dist/
 
       - name: 🚀 Deploy
-        uses: actions/deploy-pages@v6.0.0
+        uses: actions/deploy-pages@v4
